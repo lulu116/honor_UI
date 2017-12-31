@@ -1,0 +1,14 @@
+/*底部*/
+
+.footer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    background: #ccc;
+    padding: 10px;
+}
+
+address {
+    margin-left: 18%;
+    margin-top: 18px;
+}

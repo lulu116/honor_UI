@@ -1,0 +1,190 @@
+mycoder.header {
+    height: 67px;
+    background: #EBEBEB;
+}
+
+.log,
+.honor {
+    line-height: 67px;
+}
+
+.slog {
+    float: right;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.line {
+    float: left;
+    margin-left: -17px;
+    margin-top: 6px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.honor {
+    font-size: 18px;
+    color: #333333;
+}
+
+.fhonor {
+    top: 7px;
+}
+
+div.pagebg {
+    height: 588px;
+}
+
+.visit {
+    width: 620px;
+    height: 520px;
+    top: -5px;
+}
+
+.myform {
+    width: 346px;
+    height: 470px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+div.h {
+    width: 346px;
+    margin: 24px auto 36px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+span.user,
+span.extral_login {
+    display: inline-block;
+    font-size: 20px;
+    height: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 152px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+span.extral_login {
+    margin-right: 10px;
+    border-left: 1px solid #cccccc;
+}
+
+.current {
+    color: #1aa8d5;
+}
+
+.contain {
+    margin: 15px 15px;
+    margin-top: -30px;
+}
+
+.vertify {
+    width: 292px;
+    height: 42px;
+}
+
+.rem {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.loginin {
+    width: 100%;
+    border-radius: 20px;
+    height: 44px;
+    font-weight: 700;
+    margin-left: 2px;
+    outline: none;
+    border: 0;
+}
+
+.jump {
+    width: 80%;
+    height: 72px;
+    margin-left: 38px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.jump #getuserid {
+    width: auto;
+    height: 12px;
+    color: #999;
+    display: inline-block;
+    padding-right: 12px;
+    border-right: 1px solid #cccccc;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+.jump #getpsd {
+    color: #999;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+.foot {
+    margin-top: -43px;
+    height: 100px;
+    background: #EBEBEB;
+}
+
+.foot_one {
+    margin-top: -70px;
+    height: 49px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.last {
+    margin-top: 5px;
+}
+
+#slide {
+    width: 162px;
+    height: 162px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 109px;
+    top: 161px;
+    text-align: center;
+    line-height: 162px;
+}
+
+.app {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 285px;
+    text-align: center;
+}
+
+#mdiv {
+    position: absolute;
+    float: right;
+    margin-left: 225px;
+    display: none;
+}
+
+.coder {
+    position: absolute;
+    top: 273px;
+    left: 256px;
+}
+
+.userlogin {
+    position: absolute;
+    margin-top: -26px;
+    left: 80%;
+}

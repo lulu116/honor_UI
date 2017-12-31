@@ -1,0 +1,16 @@
+#upload_img_wrap {
+    margin-top: 20px;
+    width: 60%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#upload_img_wrap li {
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}

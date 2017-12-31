@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 67px;
+    width: 100%;
+    background: #282828;
+}
+
+.log,
+.honor {
+    line-height: 67px;
+}
+
+.slog {
+    float: right;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.line {
+    float: left;
+    margin-left: -17px;
+    margin-top: 6px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.honor {
+    font-size: 18px;
+    color: #fff;
+}
+
+.fhonor {
+    top: 7px;
+}
+
+.owncar {
+    font-size: 14px;
+    background: #F25C4A;
+    width: 150px;
+    float: right;
+    margin-right: 180px;
+    height: 67px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 649px;
+}
+
+.empty {
+    position: absolute;
+    top: 25px;
+}
+
+.car-contain {
+    width: 84%;
+    height: auto;
+    padding: 0 10% 0 10%;
+    margin-left: 144px;
+}
+
+h6.totalnum {
+    width: 100px;
+    height: 15px;
+    float: left;
+    margin-left: 284px;
+    margin-top: 58px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    margin-top: 257px;
+    margin-left: 82px;
+}
+
+.note {
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-right: 185px;
+    margin-top: -153px;
+}
+
+.footer {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    background: #ccc;
+    padding: 10px;
+}
+
+address {
+    margin-left: 18%;
+    margin-top: 18px;
+}
+
+.last {
+    margin-top: 5px;
+}
+
+table tr {
+    position: relative;
+}
+
+tr td a {
+    position: absolute;
+    right: 235px;
+}
+
+.mylast {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.mylast #continue {
+    background: #fff;
+    border-radius: 20px;
+    color: #e8380d;
+    border: 1px solid #e8380d;
+}
+
+.mylast #acount {
+    margin-left: 30px;
+    background: #e8380d;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid #e8380d;
+}
+
+#addresspan {
+    cursor: pointer;
+}
+
+h4 .little-font {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin-left: 26px;
+    position: relative;
+    top: -2px;
+}
+
+.attr {
+    font-weight: 400;
+}
+
+.shoplist {
+    background: #f6f6f6;
+    border: 1px solid #eaeaea;
+    margin-bottom: 24px;
+    height: auto;
+}
+
+.shoplist ul {
+    width: 100%;
+    float: left;
+    height: 21px;
+    margin-top: -20px;
+}
+
+.shoplist li {
+    float: left;
+    width: 150px;
+    margin-left: 180px;
+    min-height: 1px;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
+.totalprcie {
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin-right: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.totalprcie li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#detailpro {
+    height: 44px!important;
+    background-position: 0 -50px;
+    background: url(../images/sprites6.png) no-repeat;
+    background-size: 553px 300px;
+}
+
+#cover {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000 none repeat scroll 0% 0%;
+}
+
+#personads {
+    background-color: #fff;
+    display: block;
+    width: 45%;
+    height: 64%;
+    z-index: 99999;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    border: 1px solid gray;
+    display: none;
+    padding: 25px 35px 20px 20px;
+}
+
+.add {
+    text-align: center;
+    font-weight: 700;
+}
+
+.adstab th {
+    text-align: right;
+    display: inline-block;
+    width: 13%;
+}
+
+.adstab td {
+    display: inline-block;
+    width: 82%;
+}
+
+td textarea {
+    margin-left: 16%;
+}
+
+.handupli {
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.handup {
+    margin-left: 31px;
+    text-align: center;
+    background: #ca141d;
+    width: 80px;
+    height: 28px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 13px;
+    border: 0;
+    margin-bottom: 0!important;
+    letter-spacing: 2px;
+}
+
+.ok {
+    border-top: 2px solid #7abd54;
+    background-color: #f1f8ee!important;
+    position: relative;
+    padding-top: 30px;
+    min-height: 116px;
+    border-bottom: 1px solid #d7ebcb;
+    height: 160px;
+    margin-left: 170px;
+    margin-top: 56px;
+    padding: 20px;
+    background: #fff;
+}
+
+.onlypay {
+    margin-left: 195px!important;
+    margin-top: -51px!important;
+    font-size: 18px;
+    color: #7baa61;
+}
+
+.payprice {
+    margin-left: 195px!important;
+    margin-top: 0px!important;
+    color: #777;
+}
+
+.time {
+    margin-left: 195px!important;
+    margin-top: 0px!important;
+    color: #777;
+}
+
+.cate {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #dedede;
+    background-color: #fcfcfc;
+}
+
+.radio {
+    display: inline-block;
+    margin-left: 30px;
+    width: 127px;
+    height: 34px;
+}
+
+.payway {
+    margin-left: 170px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 42px;
+}
+
+.detailcate {
+    padding: 30px 0 16px 25px;
+    position: relative;
+}
+
+.detailcate .checkbox {
+    width: 107px;
+    height: 34px;
+    display: inline-block;
+}
+
+.subspan {
+    position: relative;
+    left: 15%;
+    padding-top: 30px;
+    text-align: right;
+}
+
+.btn-danger {
+    display: inline-block;
+    width: 150px;
+    height: 37px;
+}

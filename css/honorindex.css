@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.land_page_box {
+    width: 100%;
+    position: relative;
+}
+
+.land_page_box img {
+    height: 674px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.land_page_box .land {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    width: 80px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+}

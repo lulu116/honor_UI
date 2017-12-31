@@ -1,0 +1,308 @@
+<?php
+    require './common/user.common.php';
+
+   session_start();
+   if($_GET['action'] == 'userquit'){
+    unset($_SESSION['username']);   //销毁指定session信息
+    unset($_SESSION['userpwd']);
+    unset($_SESSION['user_id']);
+  }
+?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>华为荣耀官网</title>
+        <!--ie浏览器设备-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--绽放比例-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签必须放在最前面-->
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./fonts//loginuser/iconfont.css">
+        <link rel="shortcut icon" href="http://www.honor.cn/favicon.ico">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/PicCarousel.js"></script>
+        <script src="js/index.js"></script>
+        </script>
+        <style>
+        .myway li {
+            float: left!important;
+            display: inline-block;
+            width: 55px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: "bignoodletitlingregular", STHeiti, "微软雅黑", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+            font-size: 12px;
+            color: #444444;
+            text-transform: uppercase;
+        }
+        
+        .myway li img:hover {
+            transform: rotate(360deg) scale(1.5);
+            transition: all 1s;
+        }
+        
+        .buy {
+            display: inline-block;
+            border: 2px solid #ebebeb;
+            background-color: #fff;
+            width: auto;
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #01b4e1;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-family: "bignoodletitlingregular", STHeiti, "微软雅黑", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+            margin-top: 105px;
+            margin-left: -179px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        
+        .buy:hover {
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+        
+        @keyframes shake {
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+        
+        .myway li img {
+            width: 46px;
+            height: 46px;
+        }
+        
+        .myway p {
+            font-family: "Open Sans", "Century Gothic", CenturyGothic, AppleGothic, STHeiti, "微软雅黑", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+            font-size: 13px;
+            color: #666666;
+            margin: 5px 0 10px 28px;
+        }
+        
+        .navulproduct li img:hover {
+            opacity: 0.6;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- 导航栏 -->
+        <div class="aslidenav">
+            <div class="inner">
+                <ul class="nav aslidenav-ul">
+                    <li>
+                        <a href="#"><img src="images/ico-honor.png" alt=""><span>品牌</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-discover.png" alt=""><span>产品</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-he.png" alt=""><span>视频</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-shopping.png" alt=""><span>商城</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-activity.png" alt=""><span>活动</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-support.png" alt=""><span>服务</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-community-1.png" alt=""><span>社区</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/ico-software.png" alt=""><span>软件</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <img src="images/honor-logo-zh.png" alt="" class="indexlogo">
+            <div class="top-nav">
+                <ul class="nav pull-right top-menu" style="margin-top: 10px;">
+                    <!-- BEGIN SUPPORT -->
+                    <!-- END SUPPORT -->
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <li class="dropdown" style="list-style: none;left: -100%;top:20px;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php
+                                if($_SESSION['username']){
+
+                            ?>
+                                <span class="username" style="font-size: 16px;"><?=$_SESSION['username'];?></span>
+                                <b class="caret"></b>
+                                <?php
+                                }else {
+                                    echo ' <a href="./login.php" style="list-style: none;left: 0;top:-16px;"><span class="username" style="font-size: 16px;">注册/登录</span></a>';
+                                }
+                            ?>
+                        </a>
+                        <ul class="dropdown-menu extended logout" style="list-style: none;">
+                            <li><a href="./index.html?action=userquit"><i class="icon-key"></i> 退出登录</a></li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+        </nav>
+        <div class="banner">
+            <div id="myCarousel" class="carousel slide" data-ride='carousel' data-interval="3000" data-wrap="true">
+                <ol class="carousel-indicators">
+                    <li data-target='#myCarousel' data-slide-to='0' class="active"></li>
+                    <li data-target='#myCarousel' data-slide-to='1'></li>
+                    <li data-target='#myCarousel' data-slide-to='2'></li>
+                    <li data-target='#myCarousel' data-slide-to='3'></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/index_lbanner1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/index_lbaner2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/index_lbanner3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/index_lbanner4.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--  <a href="#myCarousel" data-slide='prev' class="carousel-control-left sildeprev">上一张</a>
+       <a href="#myCarousel" data-slide='next' class="carousel-control-right slidenext">下一张</a> -->
+        </div>
+        <!-- 华为荣耀9介绍 -->
+        <div class="index-product-intro" style="height: 987px ;background:#fff;position: relative;margin-top: 144px">
+            <div class="col-md-12">
+                <img src="images/index_honor9_product.jpg" alt="" style="display: inline-block;margin-left: -66px;">
+                <h2 class="title" style="position:relative;top:-740px;left: 66%;width: 135px;font-size: 45px">荣耀9</h2>
+                <div class="desc" style="position:relative;top:-750px;left: 66%;width: 135px;font-size: 16px;color: #666666;margin: 0 0 20px 0;">拍照就像用单反</div>
+                <ul class="myway" style="width: 30%;position: absolute;top:157px;left:64%;list-style: none">
+                    <li><img src="images/honor9_icon_1.png" alt="">麒麟960</li>
+                    <li><img src="images/honor9_icon_2.png" alt="">大运行
+                        <br>内存
+                    </li>
+                    <li><img src="images/honor9_icon_3.png" alt="">64GB/128GB 快速存储
+                    </li>
+                    <a href="./list.php">
+                        <button class="buy">查看更多</button>
+                    </a>
+                    <p>还提供4GB+64GB标配版本</p>
+                </ul>
+            </div>
+        </div>
+        <!-- 各种产品 -->
+        <div class="container-fluid index-product">
+            <div class="index-product-top">
+                <h2 class="index-product-h2" style="margin-top: -100px">找到适合你的产品</h2>
+                <ul class="nav nav-pills navul">
+                    <li>
+                        <a href="#"><img src="icon-set.png" alt=""><span class="txt">拍照摄影</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon-set.png" alt="" class="img2"><span class="txt">音乐随行</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon-set.png" alt="" class="img3"><span class="txt">宅在家里</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon-set.png" alt="" class="img4"><span class="txt">商务伙伴</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon-set.png" alt="" class="img5"><span class="txt">运动伴侣</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="index-product-body">
+                <ul class="navulproduct" style="list-style: none;margin-left: 3%;">
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-honor-v9play.jpg" alt="">
+                            <span>荣耀V9 PLAY</span>
+                    </li>
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-changwan6.jpg" alt="">
+                            <span style="letter-spacing: 2px">&nbsp;荣耀畅玩6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-honor-9.jpg" alt="">
+                            <span style="letter-spacing: 14px ;text-indent:5px;">荣耀9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-honor-6a.jpg" alt="">
+                            <span style="text-indent:8px;">荣耀畅玩6A</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-honor-8-lite.jpg" alt="">
+                            <span style="text-indent:5px;">荣耀8青春版</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./list.php">
+                            <img src="images/prd-honor-v9.jpg" alt="">
+                            <span style="text-indent:10px;letter-spacing: 7px ;">荣耀V9</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 页面底部 -->
+        <div class="footer">
+            <address>
+                <strong style="color:#777;font-weight:normal;font-size: 14px;">法律声明   |   隐私政策   |   免责条款   |   关于cookies   |   产品广告页通用声明   |   新闻与素材通用声明</strong>
+                <p style="color: #9e9e9e;">Copyright © 2011-2016 华为软件技术有限公司 版权所有 保留一切权利 | 苏公网安备 32011402010006号 苏ICP备17040376号</small>
+                    <p>
+            </address>
+        </div>
+        <!-- 底部栏 -->
+        <div class="bottomnav">
+            <ul class="bottomnav-ul">
+                <li>
+                    <a href="#">回到顶部</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script>
+    </script>
+
+    </html>

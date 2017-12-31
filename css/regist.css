@@ -1,0 +1,209 @@
+.header {
+    height: 67px;
+    background: #333333;
+}
+
+.log,
+.honor {
+    line-height: 67px;
+}
+
+.slog {
+    float: right;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.line {
+    float: left;
+    margin-left: -11px;
+    margin-top: -2px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.honor {
+    font-size: 18px;
+    color: #fff;
+}
+
+.fhonor {
+    top: -1px;
+}
+
+.title {
+    margin-left: 200px;
+    margin-right: 250px;
+    margin-top: 30px;
+    /*background: pink;*/
+}
+
+.phone {
+    width: 146px;
+    height: 35px;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 35px;
+    position: relative;
+    margin-left: -154px;
+}
+
+.smphone {
+    display: inline-block;
+    width: 14px;
+    height: 22px;
+    position: absolute;
+    top: 5px;
+    left: 21px;
+}
+
+.already {
+    float: right;
+    margin-right: 126px;
+    margin-top: 11px;
+}
+
+.content {
+    margin-left: 200px;
+    margin-right: 250px;
+    margin-left: -8px;
+    height: auto;
+    background: #fff;
+    padding: 30px 100px 50px;
+}
+
+.input_container {
+    letter-spacing: 15px;
+}
+
+.input_left {
+    border: 1px solid #d9d9d9;
+    border-radius: 20px 0 0 20px;
+    padding-left: 16px;
+    line-height: 40px;
+    background: #F7F7F7;
+    width: 123px;
+    height: 41px;
+}
+
+.input_right {
+    width: 295px;
+    height: 40px;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-radius: 0 20px 20px 0;
+    padding-left: 16px;
+    line-height: 40px;
+    position: relative;
+    left: 123px;
+    top: -42px;
+    height: 40px;
+    line-height: 40px;
+    background: #F7F7F7;
+}
+
+img.china {
+    float: right;
+    display: inline-block;
+    margin-top: 16px;
+    margin-right: 8px;
+    outline: none;
+}
+
+.text {
+    border: none;
+    background: #F7F7F7;
+    outline: none;
+    height: 20px;
+}
+
+.instruc {
+    margin-top: -16px;
+    margin-left: 16px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.include {
+    color: #000;
+}
+
+.block {
+    margin-left: 16px;
+}
+
+.sline {
+    margin-top: 6px;
+    width: 95%;
+    height: 4px;
+    background: #F7F7F7;
+}
+
+.forbid {
+    color: #666;
+    margin-top: 5px;
+}
+
+.line1 {
+    width: 96%;
+    background: #efefef;
+    height: 1px;
+    margin: 16px 0px;
+}
+
+.word {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.admid {
+    line-height: 150%;
+}
+
+.res {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 83px;
+}
+
+.boxshadow {
+    /*padding-top: 80px;*/
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.foot {
+    margin-top: -1px;
+    background: #EBEBEB;
+    padding-bottom: 20px;
+}
+
+.foot_one {
+    margin-top: 50px;
+    height: 49px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.last {
+    margin-top: 5px;
+}
+
+.coder {
+    position: absolute;
+    left: 194px;
+    top: 0px;
+}
+
+.registsub {
+    position: absolute;
+    left: 214px;
+    top: 0px;
+}
